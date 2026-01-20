@@ -1,0 +1,48 @@
+
+/* ================================Body base ================================*/
+body {
+  margin: 0;
+  background: #ffffff;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Section1 & Section7 style is   main.css–ში */
+
+/*=========================Section 2 ===========================================*/
+/*=========================Section 2 ===========================================*/
+/*=========================Section 2 ===========================================*/
+
+/* Home page base section */
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #fcf7f7;
+}
+
+.section2-left {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.section2-right {
+  flex: 1;
+}
+
+.section2-right img {
+  max-width: 100%;
+  height: auto; /* ასე ფოტო გაწელილი არ იქნება */
+  display: block;
+  margin: 0 auto;
+}
+
+
+/*========================= Section 3 ==========================================*/
+/*========================= Section 3 ==========================================*/
+/*========================= Section 3 ==========================================*/
+
+
