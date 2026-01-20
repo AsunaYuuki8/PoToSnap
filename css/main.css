@@ -81,10 +81,10 @@
 
 
 .section7 {
-  position: absolute;
-  top: 2898px;
-  left: 0;
-  width: 1440px;
+  position: relative;
+  /*top: 2898px;
+  left: 0;*/
+  width: 100%;/*1440px*/
   height: 250px;
   background-color: #000; /* შავი ფონით */
   display: flex;
