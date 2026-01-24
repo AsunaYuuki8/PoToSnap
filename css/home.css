@@ -11,11 +11,24 @@ body {
 
 /* Section1 & Section7 style is   main.css–ში */
 
+/*========================== Sarto class style ==========================================*/
+/*========================== Sarto class style ==========================================*/
+
+.section2,
+.section3,
+.section4,
+.section5,
+.section6
+ {
+  position: relative; 
+  top: auto;
+  left: auto;
+}
 /*=========================Section 2 ===========================================*/
 /*=========================Section 2 ===========================================*/
 /*=========================Section 2 ===========================================*/
 
-/* Home page base section */
+/* Home page base section 
 .section2 {
   display: flex;
   justify-content: center;
@@ -35,14 +48,510 @@ body {
 
 .section2-right img {
   max-width: 100%;
-  height: auto; /* ასე ფოტო გაწელილი არ იქნება */
+  height: auto; 
   display: block;
   margin: 0 auto;
+}*/
+
+
+/* Section 2 */
+.section2-left {
+  width: 610px;
+  height: 650px;
+  /*top: 72px;*/
+  left: 0;
+  /*position: absolute;*/
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-rect {
+  width: 387px;
+  height: 304px;
+  position: absolute;
+  top: 245px;
+  left: 112px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Title */
+.hero-title {
+  width: 387px;
+  height: 144px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+  letter-spacing: 4.17px;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  margin: 0;
+}
+
+/* Description */
+.hero-desc {
+  width: 387px;
+  height: 75px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.6;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+/* Button */
+.hero-btn {
+  width: 168px;
+  height: 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 20px;
+}
+/* საერთო utility კლასები */
+.arrow,
+.invite-arrow {
+.arrow,
+.invite-arrow {
+  font-size: 18px;
+  color: #ffffff;
+  border: none !important;
+}
+
+/* underline მხოლოდ ტექსტზე */
+.read-button span,
+.invite-button span {
+  position: relative;
+  border: none;
+}
+
+.read-button:hover span::after,
+.invite-button:hover span::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+}
+
+  color: #eeebeb; 
+
+}
+
+ 
+ /*===================*/
+/* Right side image */
+.section2-right {
+  width: 830px;
+  height: 650px;
+  top: 72px;
+  left: 610px;
+  position: absolute;
+  background: #ffffff;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
+
 /*========================= Section 3 ==========================================*/
 /*========================= Section 3 ==========================================*/
 /*========================= Section 3 ==========================================*/
+
+
+/* Section 3 */
+.section3 {
+ /* position: absolute;
+  top: 722px;*/
+  width: 1440px;
+  height: 600px;
+  left: 0;
+  display: flex;
+}
+
+/* Left side */
+.section3-left {
+  width: 830px;
+  height: 600px;
+}
+.section3-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right side */
+.section3-right {
+  width: 610px;
+  height: 600px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Inner rectangle */
+.section3-inner { 
+    width: 387px;
+     height: 329px; 
+     display: flex; 
+     flex-direction: column; 
+     justify-content: space-between; 
+    }
+
+/* Title */
+.section3-title {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4.17px;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0;
+}
+
+/* Description */
+.section3-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.6;
+  color: #000;
+  margin: 20px 0;
+}
+
+/* Button */
+.section3-btn {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #000;
+  text-decoration: none;
+}
+
+
+
+/*========================= Section 4 ==========================================*/
+/*========================= Section 4 ==========================================*/
+/*========================= Section 4 ==========================================*/
+
+
+/* Section 4 container */
+.section4 {
+  /*position: absolute;
+  top: 1322px;*/
+  left: 0;
+  width: 1440px;
+  height: 600px;
+  display: flex;            
+}
+
+/* Left side: text */
+.section4-left {
+  flex:0 1 610px;            /* ფიქსირებული სიგანე */
+  background: #f8f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section4-inner {
+  width: 387px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Right side: image */
+.section4-right {
+  flex: 1;                    /* დარჩენილი სივრცე */
+  background: #fff;
+  width: 610;
+  height: 600;
+  top: 1322px;
+}
+
+.section4-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* ბოლომდე გაწევა */
+}
+
+/* Title */
+.section4-title {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4.17px;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0;
+}
+
+/* Description */
+.section4-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.6;
+  color: #000;
+  margin: 20px 0;
+}
+
+/* Button */
+.section4-btn {
+  /*font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;*/
+  color: #000;
+  text-decoration: none;
+}
+
+.section4-btn .text{
+position: relative;
+}
+
+.section4-btn:hover .text::after{
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #000;
+}
+
+
+
+/*========================= Section 5 ==========================================*/
+/*========================= Section 5 ==========================================*/
+/*========================= Section 5 ==========================================*/
+
+
+
+.section5 {
+  /*position: absolute;
+  top: 1922px;*/
+  left: 0;
+  width: 1440px;
+  height: 500px;
+  display: flex;
+  gap:0; /* დაშორებეიბის ასაცილებლად*/
+  overflow: visible;
+}
+
+.card {
+  width: 360px;
+  height: 500px;
+  position: relative;
+  background: #efefef;
+  overflow: hidden;
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  z-index: 1;
+}
+ .card:hover {
+  transform: translateY(-40px);
+  z-index: 10;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+}
+
+.overlay.gradient {
+  background: linear-gradient(180deg, rgba(0,0,0,0.0001) 0.27%, rgba(0,0,0,0.66) 100%);
+}
+
+.title {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
+}
+
+.author {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 100%;
+  margin: 5px 0 15px;
+}
+
+.divider {
+  width: 280px;
+  height: 1px;
+  background: #fff;
+  opacity: 0.25;
+  margin-bottom: 15px;
+}
+
+.read {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+}
+
+.read a {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.arrow {
+  border: 1px solid #fff;
+  padding: 2px 8px;
+}
+
+
+.read-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+  height: 16px;
+  text-decoration: none;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.read-button span {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+/* Arrow box */
+.read-button .arrow {
+  border: 0px solid #ffffff;
+  padding: 2px 8px;
+  margin-left: auto;
+}
+
+/* Hover effect */
+.read-button:hover span,
+.read-button:hover .arrow {
+  color: #ffcc99;
+  border-color: #fcc288;
+}
+
+
+
+/*========================= Section 6 ==========================================*/
+/*========================= Section 6 ==========================================*/
+/*========================= Section 6 ==========================================*/
+
+
+
+.section6 {
+  /*position: absolute;
+  top: 2542px;
+  left: 165px;
+  height: 236px;*/
+  width: 1110px;
+  margin: 100px auto;
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 0 rgba(0,0,0,0.0);
+   
+}
+
+.feature-card {
+  width: 350px;
+  min-height: 236px;
+  /*height: 236px;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.icon {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+ 
+ .icon.icon-2 {
+  width: 72px;
+  height: 36px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  margin-top: 20px;    
+  margin-bottom: 35px;
+}    
+
+
+.feature-title {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000;
+  letter-spacing: 0px;
+  margin: 0 0 10px;
+}
+
+.feature-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000;
+  opacity: 0.6;
+}
 
 
