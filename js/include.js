@@ -16,3 +16,4 @@ includeHTML("#section1-placeholder", "partials/Section1.html");
 includeHTML("#section7-placeholder", "partials/section7.html");
 
 includeHTML("#footer-placeholder", "partials/footer.html");
+includeHTML("#section6-placeholder", "partials/section6.html");

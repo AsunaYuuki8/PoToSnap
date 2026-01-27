@@ -1,0 +1,121 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section 2 */
+.section2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1440px;
+  margin: 100px auto;
+  gap: 20px;
+}
+.section2-left {
+  flex: 1 1 387px;
+  background: #000;
+  color: #fff;
+  padding: 40px;
+}
+.features-heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4.17px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+.features-desc {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.6;
+}
+.section2-right {
+  flex: 1 1 830px;
+}
+.section2-right img {
+  width: 100%;
+  height: auto;
+  max-height: 490px;
+  object-fit: cover;
+}
+
+/* Sections 3 & 4 */
+.section3, .section4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+}
+.icon {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 20px;
+}
+.icon.icon-2 {
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.feature-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 10px 0;
+}
+.feature-desc {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.6;
+}
+
+/* Section 5 */
+.section5 {
+  width: 100%;
+  height: 280px;
+  background: #000;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section5-border {
+  width: 1110px;
+  height: 144px;
+  border: 1px solid transparent;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.beta-heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4.17px;
+  color: #fff;
+}
+.invite-btn {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
+}
