@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features Page</title>
+   <link rel="stylesheet" href="/css/pricing.css">
+   <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+  <!-- Section 1 (From Section1.html) -->
+  <div id="section1-placeholder"></div>
+  
+  <!-- ================= PRICING HEADER (BLACK SECTION) ================= -->
+<section class="pricing-header">
+  <div class="pricing-header-container">
+
+    <!-- LEFT TEXT -->
+    <div class="pricing-text">
+      <span class="gradient-bar"></span>
+
+      <h1>PRICING</h1>
+
+      <p>
+        Create a your stories, Photosnap is a platform for photographers and
+        visual storytellers. It’s the simple way to create and share your photos.
+      </p>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="pricing-image">
+      <img src="images/Pricing.png" alt="Photographer">
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= PRICING CARDS ================= -->
+<section class="pricing-wrapper">
+  <div class="pricing-container">
+
+    <!-- TOGGLE -->
+    <div class="billing-toggle">
+      <span class="active">Monthly</span>
+
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
+
+      <span>Yearly</span>
+    </div>
+
+    <!-- CARDS -->
+    <div class="pricing-cards">
+
+      <article class="card">
+        <h3>Basic</h3>
+        <p class="desc">
+          Includes basic usage of our platform.
+          Recommended for new photographers.
+        </p>
+        <div class="price">$19.00</div>
+        <span class="period">per month</span>
+        <button>Pick Plan</button>
+      </article>
+
+      <article class="card featured">
+        <h3>Pro</h3>
+        <p class="desc">
+          More advanced features available.
+          Recommended for photography studios.
+        </p>
+        <div class="price">$39.00</div>
+        <span class="period">per month</span>
+        <button>Pick Plan</button>
+      </article>
+
+      <article class="card">
+        <h3>Business</h3>
+        <p class="desc">
+          Additional features available such as
+          more detailed metrics.
+        </p>
+        <div class="price">$99.00</div>
+        <span class="period">per month</span>
+        <button>Pick Plan</button>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= COMPARE TABLE ================= -->
+<section class="compare">
+  <div class="compare-container">
+
+    <h2>COMPARE</h2>
+
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>The Features</th>
+          <th>Basic</th>
+          <th>Pro</th>
+          <th>Business</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Unlimited Story Posting</td>
+          <td data-check="yes"></td>
+          <td data-check="yes"></td>
+          <td data-check="yes"></td>
+        </tr>
+
+        <tr>
+          <td>Unlimited Photo Upload</td>
+          <td data-check="yes"></td>
+          <td data-check="yes"></td>
+          <td data-check="yes"></td>
+        </tr>
+
+        <tr>
+          <td>Embedding Custom Content</td>
+          <td></td>
+          <td data-check="yes"></td>
+          <td data-check="yes"></td>
+        </tr>
+
+        <tr>
+          <td>Customize Metadata</td>
+          <td></td>
+          <td data-check="yes"></td>
+          <td data-check="yes"></td>
+        </tr>
+
+        <tr>
+          <td>Advanced Metrics</td>
+          <td></td>
+          <td></td>
+          <td data-check="yes"></td>
+        </tr>
+
+        <tr>
+          <td>Photo Downloads</td>
+          <td></td>
+          <td></td>
+          <td data-check="yes"></td>
+        </tr>
+
+        <tr>
+          <td>Search Engine Indexing</td>
+          <td></td>
+          <td></td>
+          <td data-check="yes"></td>
+        </tr>
+
+        <tr>
+          <td>Custom Analytics</td>
+          <td></td>
+          <td></td>
+          <td data-check="yes"></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</section>
+ 
+  <!-- ================= CTA ================= -->
+  <section class="cta">
+    <img src="./images/FeatedPic.jpg" alt="Desert" class="cta-bg">
+
+    <div class="cta-content">
+      <h2>
+        We’re in beta.<br>
+        Get your invite today!
+      </h2>
+
+      <a href="#">GET AN INVITE →</a>
+    </div>
+  </section>
+
+
+
+    <!-- Section 6 (From Section7.html) -->
+  <div id="section7-placeholder"></div>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+ 
+  <script src="/js/include.js"></script>
+<script> 
+   includeHTML("#section1-placeholder", "partials/Section1.html");
+   includeHTML("#section7-placeholder", "partials/Section7.html");
+</script>
+
+</body>
+</html>

@@ -1,29 +1,76 @@
+
+body {
+  overflow-x: hidden;
+}
+
 /* Section1 / Hero */
+/*
+#section1  {
+  margin-bottom: 0 !important;
+}*/ 
 .stories-hero {
-  width: 1440px;
+  width: 100%;/*1440px;*/
   height: 650px;
   position: relative;
-  margin: 72px auto 0 auto;
+  /*margin: 0 auto;*/
 }
-/**/
 
+.stories-hero-inner {
+  max-width: 1440px;
+  height: 650px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;  
+}
+ 
+
+.hero-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
 .hero-bg img {
-  width: 1440px;
-  height: 650px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+
 }
-.hero-bg {position: relative;}
+
+
 .hero-overlay {
   position: absolute;
-inset: 0;
-background: linear-gradient(
-  180deg,
-  rgba(0, 0, 0.55) 0%,
-  rgba(0,0,0,0.3)  50%
-  rgba(0,0,0,0.7)100%
-);
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  z-index: 1;
 }
+
+.hero-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+
+  background: radial-gradient(
+    68.48% 68.48% at 0% 100%,
+    #FFC593 0%,
+    rgba(188, 113, 152, 0.496968) 52.36%,
+    rgba(90, 119, 255, 0.0001) 100%
+  );
+}
+
+.stories-hero:hover .hero-bg::after {
+  opacity: 0.49;
+}
+
+
 /**/
 .hero-content {
   position: absolute;
@@ -32,58 +79,106 @@ background: linear-gradient(
   width: 387px;
   color: white;
   font-family: 'DM Sans', sans-serif;
+  z-index: 2;
 }
 
 .hero-tag {
+  width: 242px;
+  height: 16px;
   font-weight: 700;
   font-size: 12px;
+  line-height: 100%;
   letter-spacing: 2px;
-  margin-bottom: 8px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 16px;
 }
 
 .hero-title {
+  width: 387px;
+  height: 144px;
   font-weight: 700;
   font-size: 40px;
   line-height: 48px;
   letter-spacing: 4.17px;
   text-transform: uppercase;
-  margin-bottom: 24px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
 }
+
 
 .hero-meta {
   display: flex;
-  gap: 10px;
-  font-weight: 400;
-  font-size: 13px;
-  margin-bottom: 16px;
+  gap: 8px;
+  margin-bottom: 24px;
 }
 
+.hero-meta .date {
+  opacity: 0.75;
+  font-size: 13px;
+  line-height: 100%;
+}
+
+.hero-meta .author {
+  font-size: 13px;
+  line-height: 100%;
+}
+
+
 .hero-desc {
+  width: 387px;
+  height: 125px;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
-  margin-bottom: 16px;
+  opacity: 0.6;
+  margin-bottom: 24px;
 }
 
+
 .hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 2px;
-  text-decoration: underline;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-bottom: 1px solid #FFFFFF;
+  width: fit-content;
+  padding-bottom: 4px;
 }
 
-/* sectionm2-> section 6*/
-.section3, .section4, .section5, .section6 {
-  display: flex;
+.hero-btn .arrow {
+  position: relative;
+  top: 2px;
+}
+
+
+
+/*================================================================*/
+/*================================================================*/
+
+/* ===============================
+    Sections 3–6 layout
+================================ */
+.section3,
+.section4,
+.section5,
+.section6 {
   width: 1440px;
   height: 500px;
   margin: 0 auto;
+  display: flex;
   gap: 0;
+  overflow: visible;
 }
 
+/* ===============================
+   Card
+================================ */
 .section3 .card,
 .section4 .card,
 .section5 .card,
@@ -91,41 +186,109 @@ background: linear-gradient(
   width: 360px;
   height: 500px;
   position: relative;
+  overflow: hidden;
+  background: #efefef;
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  z-index: 1;
 }
 
+.section3 .card:hover,
+.section4 .card:hover,
+.section5 .card:hover,
+.section6 .card:hover {
+  transform: translateY(-40px);
+  z-index: 10;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* ===============================
+   Image
+================================ */
 .card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-/**/
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: white;
-  padding: 20px;
-}
 
+/* ===============================
+   Overlay + Gradient
+================================ */
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0,0,0,0) 0%,
-    rgba(0,0,0,0.35) 45%,
-    rgba(0,0,0,0.85) 100%
-  );
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 24px;
-  color: white;
-}
-.card {
-  transition: transform 0.3s ease;
+  color: #fff;
 }
 
-.card:hover {
-  transform: translateY(-10px);
+.overlay.gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.0001) 0.27%,
+    rgba(0, 0, 0, 0.66) 100%
+  );
 }
+
+/* ===============================
+   Text styles
+================================ */
+.title {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
+}
+
+.author {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  margin: 5px 0 15px;
+}
+
+/* Divider */
+.divider {
+  width: 280px;
+  height: 1px;
+  background: #ffffff;
+  opacity: 0.25;
+  margin-bottom: 15px;
+}
+
+/* ===============================
+   Read button
+================================ */
+.read-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.read-button span {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.read-button .arrow {
+  padding: 2px 8px;
+}
+
+/* Hover */
+.read-button:hover span,
+.read-button:hover .arrow {
+  color: #ffcc99;
+}
+
+
